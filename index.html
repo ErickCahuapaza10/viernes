@@ -1,0 +1,163 @@
+<html>
+<head>
+	<title>while</title>
+	<script Lang="javascript" type="text/javascript">
+		function suma(){
+			var n1=document.formu.op1.value;
+			var n2=document.formu.op2.value;
+			a=parseFloat(n1);
+			b=parseFloat(n2);
+			s=a+b;
+			document.formu.re.value=s;
+		}
+		function resta(){
+			var n3=document.form.op3.value;
+			var n4=document.form.op4.value;
+			c=parseFloat(n3);
+			d=parseFloat(n4);
+			r=c-d;
+			document.form.res.value=r;
+		}
+		function producto(){
+			var n5=document.formul.op5.value;
+			var n6=document.formul.op6.value;
+			e=parseFloat(n5);
+			f=parseFloat(n6);
+			p=e*f;
+			document.formul.resp.value=p;
+		}
+		function division(){
+			var n7=document.formula.op7.value;
+			var n8=document.formula.op8.value;
+			g=parseFloat(n7);
+			h=parseFloat(n8);
+			d=g/h;
+			document.formula.respu.value=d;
+		}
+		function modulo(){
+			var n9=document.formulas.op9.value;
+			var n10=document.formulas.op10.value;
+			i=parseFloat(n9);
+			j=parseFloat(n10);
+			m=i%j;
+			document.formulas.respue.value=m;
+		}
+		function factorial(){
+			var n11=document.formulario.op11.value;
+			k=parseFloat(n11);
+			var f=1;
+			for(var i=1;i<=k;i++)
+			{
+				f*=i;
+			}
+			document.formulario.respues.value=f;
+		}
+	</script>
+</head>
+<body>
+<form action="" name="formu">
+	<center><h2>Calculadora Suma:</h2></center>
+	<table border="1" align="center">
+		<tr>
+			<td rowspan="3"><input type="button" value="Calculo" onclick=suma();></td>
+			<td>X</td>
+			<td><input type="text" name="op1"></td>
+		</tr>
+		<tr>
+			<td>Y</td>
+			<td><input type="text" name="op2"></td>
+		</tr>
+		<tr>
+			<td>Res</td>
+			<td><input type="text" name="re"></td>
+		</tr>
+	</table>
+</form>	
+<form action="" name="form">
+	<center><h2>Calculadora Resta:</h2></center>
+	<table border="1" align="center">
+		<tr>
+			<td rowspan="3"><input type="button" value="Calculo" onclick=resta(); ></td>
+			<td>X</td>
+			<td><input type="text" name="op3"></td>
+		</tr>
+		<tr>
+			<td>Y</td>
+			<td><input type="text" name="op4"></td>
+		</tr>
+		<tr>
+			<td>Res</td>
+			<td><input type="text" name="res"></td>
+		</tr>
+	</table>
+</form>	
+<form action="" name="formul">
+	<center><h2>Calculadora Producto:</h2></center>
+	<table border="1" align="center">
+		<tr>
+			<td rowspan="3"><input type="button" value="Calculo" onclick=producto(); ></td>
+			<td>X</td>
+			<td><input type="text" name="op5"></td>
+		</tr>
+		<tr>
+			<td>Y</td>
+			<td><input type="text" name="op6"></td>
+		</tr>
+		<tr>
+			<td>Res</td>
+			<td><input type="text" name="resp"></td>
+		</tr>
+	</table>
+</form>	
+<form action="" name="formula">
+	<table border="1" align="center">
+		<center><h2>Calculadora Division:</h2></center>
+		<tr>
+			<td rowspan="3"><input type="button" value="Calculo" onclick=division(); ></td>
+			<td>X</td>
+			<td><input type="text" name="op7"></td>
+		</tr>
+		<tr>
+			<td>Y</td>
+			<td><input type="text" name="op8"></td>
+		</tr>
+		<tr>
+			<td>Res</td>
+			<td><input type="text" name="respu"></td>
+		</tr>
+	</table>
+</form>	
+<form action="" name="formulas">
+	<center><h2>Calculadora Modulo:</h2></center>
+	<table border="1" align="center">
+		<tr>
+			<td rowspan="3"><input type="button" value="Calculo" onclick=modulo(); ></td>
+			<td>X</td>
+			<td><input type="text" name="op9"></td>
+		</tr>
+		<tr>
+			<td>Y</td>
+			<td><input type="text" name="op10"></td>
+		</tr>
+		<tr>
+			<td>Res</td>
+			<td><input type="text" name="respue"></td>
+		</tr>
+	</table>
+</form>	
+<form action="" name="formulario">
+	<center><h2>Calculadora Factorial:</h2></center>
+	<table border="1" align="center">
+		<tr>
+			<td rowspan="3"><input type="button" value="Calculo" onclick=factorial(); ></td>
+			<td>X</td>
+			<td><input type="text" name="op11"></td>
+		</tr>
+		<tr>
+			<td>Res</td>
+			<td><input type="text" name="respues"></td>
+		</tr>
+	</table>
+</form>	
+</body>
+</html>
